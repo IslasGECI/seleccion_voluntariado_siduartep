@@ -14,7 +14,7 @@ all: check coverage mutants
 		tests
 
 module = seleccion_voluntariado_2023
-codecov_token = 6c56bccb-1758-4ed9-8161-97c845591c26
+codecov_token = 091c7243-ee4b-48e3-8234-a3e273c0eb71
 
 define lint
 	pylint \
