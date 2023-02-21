@@ -4,7 +4,6 @@ def generar_codigo(nombre_ave):
     """
     #Establecemos que el input esté en mayúsculas, reemplazamos los guiones con un guión y espacio porque es importante mantener el formato de guión y del mismo modo es importante crear la separación para terminar así con una separación de palabras
     palabras = nombre_ave.upper().replace('-','- ').split()
-    codigo=''
 
     # Regla 1: Si el nombre consta de una sola palabra, formamos el código de las letras iniciales, hasta cuatro.
     if len(palabras) == 1:
