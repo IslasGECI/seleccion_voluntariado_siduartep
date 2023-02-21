@@ -1,5 +1,5 @@
 name: Push latest
-on: push
+on: [push, pull_request]
 jobs:
   actions:
     runs-on: ubuntu-latest
