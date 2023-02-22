@@ -1,4 +1,2 @@
-"""An example of a Python module"""
-
 __version__ = "0.4.0"
-from .transformations import add_offset  # noqa
+from .KATA_siduartep import generar_codigo, ERROR_DE_STRING_VACIO, ERROR_DE_TIPO
