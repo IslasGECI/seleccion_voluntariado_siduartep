@@ -43,8 +43,8 @@ def generar_codigo(nombre_ave=""):
     elif (
         len(palabras) == 3
         and "-" in palabras[1]
-        and not "-" in palabras[0]
-        and not "-" in palabras[2]
+        and "-" not in palabras[0]
+        and "-" not in palabras[2]
     ):
         codigo = palabras[0][:2] + palabras[1][0] + palabras[2][0]
 
