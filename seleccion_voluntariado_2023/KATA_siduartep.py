@@ -2,7 +2,7 @@ ERROR_DE_TIPO = "EROR: El nombre del ave que introduciste no es de tipo string"
 ERROR_DE_STRING_VACIO = "EROR: El nombre del ave no puede ser un str vacio"
 
 """"
-    Este algoritmo recibe el nombre de un ave en formato cadena de texto (STRING) 
+    Este algoritmo recibe el nombre de un ave en formato cadena de texto (STRING)
     y lo convierte en un código de acuerdo con las siguientes reglas descritas en:
     [https://islas.dev/2020/08/06/kata]
 """
@@ -40,11 +40,13 @@ def generar_codigo(nombre_ave=""):
     # Regla 3: Para los nombres de tres palabras donde solo las dos últimas
     # palabras se unen con guión, el código usa las primeras dos letras de la
     # primera palabra y la primera letra de cada una de las dos últimas palabras.
-    elif (
-        len(palabras) == 3
-        and "-" in palabras[1]
-        and "-" not in palabras[0]
-        and "-" not in palabras[2]
+    elif all(
+        [
+            len(palabras) == 3,
+            "-" in palabras[1],
+            "-" not in palabras[0],
+            "-" not in palabras[2],
+        ]
     ):
         codigo = palabras[0][:2] + palabras[1][0] + palabras[2][0]
 
