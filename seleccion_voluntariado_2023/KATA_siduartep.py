@@ -9,13 +9,7 @@ def generate_code(name_bird=""):
         code = words[0][:4]
     elif len(words) == 2:
         code = words[0][:2] + words[1][:2]
-    elif all(
-        [
-            len(words) == 3,
-            "-" in words[1],
-            name_bird.count('-') == 1
-        ]
-    ):
+    elif all([len(words) == 3, "-" in words[1], name_bird.count("-") == 1]):
         code = words[0][:2] + words[1][0] + words[2][0]
     elif len(words) == 3:
         code = words[0][0] + words[1][0] + words[2][:2]
