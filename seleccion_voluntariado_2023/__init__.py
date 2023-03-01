@@ -4,6 +4,6 @@ El algoritmo recibe el nombre de un ave y genera un código de cuatro letras baj
 """
 
 __version__ = "0.4.0"
-from .KATA_siduartep import generar_codigo, ERROR_DE_STRING_VACIO, ERROR_DE_TIPO
+from .KATA_siduartep import generate_code
 
-__all__ = ["generar_codigo", "ERROR_DE_STRING_VACIO", "ERROR_DE_TIPO"]
+__all__ = ["generate_code"]
